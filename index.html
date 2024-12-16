@@ -27,9 +27,47 @@
     <!-- Home Section -->
     <section id="home">
         <div class="hero">
+            
             <h2>Welcome to Ayurvedic Healing</h2>
             <p>Your path to natural wellness and balance.</p>
         </div>
+         <!-- Slideshow container -->
+    <div class="slideshow-container">
+        <!-- Images for the slideshow -->
+        <img class="mySlides" src="image1.jpg" alt="Ayurvedic Treatment 1">
+        <img class="mySlides" src="image2.jpg" alt="Ayurvedic Treatment 2">
+        <img class="mySlides" src="image3.jpg" alt="Ayurvedic Treatment 3">
+        <img class="mySlides" src="image4.jpg" alt="Ayurvedic Treatment 4">
+    </div>
+
+    <script>
+        // JavaScript code to create the slideshow effect
+        let slideIndex = 0;
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            
+            // Hide all slides first
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            
+            // Move to the next slide
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            
+            // Show the current slide
+            slides[slideIndex - 1].style.display = "block";
+            
+            // Change slide every 3 seconds
+            setTimeout(showSlides, 3000);
+        }
+
+        // Initialize slideshow
+        showSlides();
+    </script>
     </section>
 
     <!-- Services Section -->
