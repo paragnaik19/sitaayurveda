@@ -1,13 +1,99 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sita Ayurvedic ">
+    <title>Ayurvedic Clinic</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
 
-<div>
-    <h1>Sita Ayurved Coming Live Soon</h1>
-    <h3>Dr. Supriya Patil</h3>
-    <h3>Dr. Sumit Patil</h3>
-    <hr>
-    <p>05 days left</p>
-</div>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Sita Ayurvedic</h1>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <!-- Home Section -->
+    <section id="home">
+        <div class="hero">
+            <h2>Welcome to Ayurvedic Healing</h2>
+            <p>Your path to natural wellness and balance.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <h3>Ayurvedic Consultation</h3>
+                <p>Personalized consultations to understand your body’s unique needs.</p>
+            </div>
+            <div class="service">
+                <h3>Herbal Medicine</h3>
+                <p>Herbal treatments for various health conditions.</p>
+            </div>
+            <div class="service">
+                <h3>Massage Therapy</h3>
+                <p>Relaxing and therapeutic massages for body rejuvenation.</p>
+            </div>
+            <div class="service">
+                <h3>Detox Programs</h3>
+                <p>Complete detox plans for improving digestion and energy levels.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What Our Patients Say</h2>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <p>"The best Ayurvedic treatments I've ever received. I feel more energetic and balanced!"</p>
+                <p>- Sarah J.</p>
+            </div>
+            <div class="testimonial">
+                <p>"A wonderful experience. The therapists are very knowledgeable, and the clinic feels very peaceful."</p>
+                <p>- John D.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p>Phone: +123 456 789</p>
+            <p>Email: info@ayurvedicclinic.com</p>
+        </div>
+        <h3>Book an Appointment</h3>
+        <form id="appointment-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Ayurvedic Healing Center. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
